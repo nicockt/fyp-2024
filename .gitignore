@@ -1,2 +1,4 @@
 .DS_Store
 .ipynb_checkpoints
+data/merge_file.csv
+data/merge_file_6m.csv
