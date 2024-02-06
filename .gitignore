@@ -2,3 +2,4 @@
 .ipynb_checkpoints
 data/merge_file.csv
 data/merge_file_6m.csv
+__pycache__/util.cpython-310.pyc
