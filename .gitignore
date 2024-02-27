@@ -1,7 +1,5 @@
 .DS_Store
 .ipynb_checkpoints
-data/merge_file.csv
-data/merge_file_6m.csv
 __pycache__/util.cpython-310.pyc
 __pycache__/visualization.cpython-310.pyc
 Feature Update.ipynb.webloc
