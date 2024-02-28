@@ -15,7 +15,7 @@ def plot_feature_importances(evaluation_df, model_name):
     # Plot the average as a bar chart
     if len(importance_avgs) > 5:
         plt.figure(figsize=(17, 8))
-        plt.xticks(range(len(importance_avgs)), importance_avgs.index, fontsize=10, rotation='45')
+        plt.xticks(range(len(importance_avgs)), importance_avgs.index, fontsize=10, rotation=45)
         plt.tight_layout()
     else:
         plt.figure(figsize=(8, 6))
