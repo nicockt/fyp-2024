@@ -4,6 +4,8 @@ import numpy as np
 from sklearn.metrics import auc
 
 def plot_feature_importances(evaluation_df, model_name):
+    title_font = {'fontname': 'Arial', 'fontsize': 30, 'fontweight': 'bold'}
+
     # Get column names ending with "_importance"
     importance_columns = [col for col in evaluation_df.columns if col.endswith("_importance")]
 
@@ -12,18 +14,14 @@ def plot_feature_importances(evaluation_df, model_name):
     cleaned_index = [index.replace("_importance", "") for index in importance_avgs.index]
     importance_avgs = pd.Series(importance_avgs.values, index=cleaned_index)
 
-    # Plot the average as a bar chart
-    if len(importance_avgs) > 5:
-        plt.figure(figsize=(17, 8))
-        plt.xticks(range(len(importance_avgs)), importance_avgs.index, fontsize=10, rotation=45)
-        plt.tight_layout()
-    else:
-        plt.figure(figsize=(8, 6))
-        plt.xticks(range(len(importance_avgs)), importance_avgs.index)
-    plt.bar(range(len(importance_avgs)), importance_avgs)
-    plt.title(f'Feature Importance in {model_name} Model')
-    plt.xlabel('Features')
-    plt.ylabel('Importance')
+    plt.figure(figsize=(20, 15))
+    plt.yticks(range(len(importance_avgs)), importance_avgs.index, fontsize=23)
+    plt.xticks(fontsize=25)
+    plt.tight_layout()
+    plt.barh(range(len(importance_avgs)), importance_avgs)
+    plt.title(f'Feature Importance in {model_name} Model', **title_font)
+    plt.ylabel('Features', fontsize=30)
+    plt.xlabel('Importance', fontsize=30)
     plt.show()
 
 def plot_roc_curve(evaluation_df, model_name):
