@@ -1,0 +1,4 @@
+Train_Start,Train_End,Val_Start,Val_End,Test_Start,Test_End,Confusion_Matrix,Precision,Recall,F1,Accuracy,RMSE,MAPE,AUC-ROC,False Positive Rate,True Positive Rate
+1998-09-30,2013-09-30,2013-12-31,2015-09-30,2015-12-31,2019-12-31,"[[116  47]
+ [  2   0]]",0.0,0.0,0.0,0.703030303030303,0.5449492609130661,,0.39570552147239263,"[0.         0.00613497 0.3803681  0.3803681  0.82822086 0.82822086
+ 1.        ]",[0.  0.  0.  0.5 0.5 1.  1. ]
