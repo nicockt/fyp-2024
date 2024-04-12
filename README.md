@@ -1,5 +1,7 @@
-# fyp-2024
+# FTEC FYP 2023-24
 Topic : Machine Learning for Financial Applications - Stock Market Crash Prediction
+
+Supervisor: Prof. LI Lingfei
 
 Group ID : B
 
